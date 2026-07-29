@@ -18,7 +18,7 @@ export class TableComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    this.http.get<any[]>('http://ssoarchive.infinityfreeapp.com/api/get_breeds.php')
+    this.http.get<any[]>('http://https://fabi04.infinityfree.me/api/get_breeds.php')
       .subscribe(breeds => {
 
         this.data = breeds;

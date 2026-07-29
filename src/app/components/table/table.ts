@@ -18,7 +18,7 @@ export class TableComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    this.http.get<any[]>('https://fabi04.infinityfree.me/api/get_breeds.php')
+    this.http.get<any[]>('http://fabi04.infinityfree.me/api/get_breeds.php')
       .subscribe(breeds => {
 
         this.data = breeds;
@@ -102,7 +102,7 @@ export class TableComponent implements AfterViewInit {
           },
 
           data: this.data.map(item => [
-            `<img src="http://localhost/ssoarchive/images/${item.coat_image.trim()}" class="horse-img" />`,
+            `<img src="http://fabi04.infinityfree.me/images/${item.coat_image.trim()}" class="horse-img" />`,
             item.breed_name,
             item.coat_name,
             item.breed_desc,

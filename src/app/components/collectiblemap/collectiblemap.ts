@@ -77,7 +77,7 @@ export class Collectiblemap implements OnInit {
     this.loading = true;
 
     this.http
-      .get<any[]>('http://localhost/ssoarchive/api/get_collectibles.php')
+      .get<any[]>('https://fabi04.infinityfree.me/api/get_collectibles.php')
       .subscribe({
         next: (data) => {
           const apiData = data.map(item => ({

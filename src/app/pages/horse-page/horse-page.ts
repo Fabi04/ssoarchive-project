@@ -48,7 +48,7 @@ export class HorsePageComponent implements OnInit {
   }
 
   loadHorses(): void {
-    this.http.get<any[]>('http://localhost/ssoarchive/api/get_breeds.php')
+    this.http.get<any[]>('https://fabi04.infinityfree.me/api/get_breeds.php')
       .subscribe({
         next: (data) => {
           this.horses = data;

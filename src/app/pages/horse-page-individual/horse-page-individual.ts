@@ -67,7 +67,7 @@ export class HorsePageIndividual implements OnInit, OnDestroy {
     }
 
     this.http
-      .get<any>(`http://localhost/ssoarchive/api/get_horse_by_id.php?id=${id}`)
+      .get<any>(`https://fabi04.infinityfree.me/api/get_horse_by_id.php?id=${id}`)
       .subscribe({
         next: (data) => {
           this.cache.set(id, data);

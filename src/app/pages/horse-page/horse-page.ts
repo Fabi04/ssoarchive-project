@@ -70,8 +70,8 @@ export class HorsePageComponent implements OnInit {
     console.log("TRIMMED QUERY:", query);
 
     const url = query
-      ? `http://localhost/ssoarchive/api/search_breeds.php?q=${encodeURIComponent(query)}&t=${Date.now()}`
-      : `http://localhost/ssoarchive/api/get_breeds.php?t=${Date.now()}`;
+      ? `https://fabi04.infinityfree.me/api/search_breeds.php?q=${encodeURIComponent(query)}&t=${Date.now()}`
+      : `https://fabi04.infinityfree.me/api/get_breeds.php?t=${Date.now()}`;
 
     console.log("URL USED:", url);
 

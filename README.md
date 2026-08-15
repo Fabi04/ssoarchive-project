@@ -68,8 +68,8 @@ The backend API is hosted separately and communicates with the Angular frontend 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/Fabi04/ssoarchive-project.git
+cd ssoarchive-project
 ```
 
 ### 2. Install dependencies
